@@ -1,24 +1,17 @@
-title: John Smith
-description: My Personal Blog
-author: John Smith
-logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/codeasashu
-about: Freelance developer
+# Site settings
+title: Страница vl.maksime на GitHub
+description: Мой небольшой блог, работающий на GitHub Pages
+author: Владимир Максименко
+email: vl.maksime@gmail.com
+github_username: vlmaksime
 
 baseurl: ""
 url: ""
 
-allowsearch: true
-
-disqus_shortname: aboutashu
 google_analytics: UA-72862926-1
+allowsearch: false
 
-share:
-  twitter_username: \#
-  fb_appid: 000000000000
-
-
-enableTags: true
+enableTags: false
 tagarray: []
 
 paginate: 20

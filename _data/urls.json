@@ -1,34 +1,23 @@
 [
   {
-    "text": "Home",
+    "text": "Блог",
     "url": "/",
-    "icon": "fa-home",
+    "icon": "fa-file-text",
     "layout": "post"
   },
   {
     "text": "About",
-    "url": "/about/",
+    "url": "/about",
     "icon": "fa-comments"
   },
   {
-    "text": "Projects",
-    "url": "/projects",
-    "icon": "fa-desktop"
+    "text": "Дополнения",
+    "url": "/repository.vlmaksime",
+    "icon": "fa-archive"
   },
   {
-    "text": "Resume",
-    "url": "/#",
-    "icon": "fa-graduation-cap",
+    "text": "Donate",
+    "url": "/donate",
+    "icon": "fa-money",
   },
-  {
-    "text": "Github",
-    "url": "/#",
-    "icon": "fa-github"
-  },
-  {
-    "text": "XML Feed",
-    "url": "/feed.xml",
-    "icon": "fa-feed",
-    "target": _blank
-  }
 ]
