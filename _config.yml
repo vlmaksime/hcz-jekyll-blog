@@ -1,24 +1,37 @@
 # Site settings
-title: Страница vl.maksime на GitHub
-description: Мой небольшой блог, работающий на GitHub Pages
-author: Владимир Максименко
-email: vl.maksime@gmail.com
-github_username: vlmaksime
+title: John Smith
+description: My Personal Blog
+author: John Smith
+logo: /static/img/avatar.png
+about: Freelance developer
+email: ""
+github_username: codeasashu
 
 baseurl: ""
 url: ""
 
-google_analytics: ""
-allowsearch: false
+allowsearch: true
 
-enableTags: false
+disqus_shortname: aboutashu
+google_analytics: UA-72862926-1
+
+share:
+  twitter_username: \#
+  fb_appid: 000000000000
+
+
+enableTags: true
 tagarray: []
 
 paginate: 20
 per_page: 20
 paginate_path: "/page:num/"
 
+# Collections
+collections:
+  addons:
+    output: true
+
 # Build settings
 markdown: kramdown
 plugins: [jekyll-paginate, jekyll-gist]
-include: [index.html, 404.html]

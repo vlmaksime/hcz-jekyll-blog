@@ -1,0 +1,24 @@
+---
+layout: default
+title: Дополнения
+---
+<article class="post">
+  <div class="post-content">
+    <div class="projects row">
+    {% for addon in site.addons %}
+      {% capture icon_url %}/releases/{{ addon._id }}/icon.png{% endcapture %}
+      <div class="project-item col-md-4 col-sm-6 col-xs-12">
+        <div class="well project-outer">
+          <div class="project-inner">
+            <div class="project-img bordered" style="background-image: url('{{ icon_url | absolute_url }}');"></div>
+            <h3 class="project-headlines">{{ addon.title }}</h3>
+            <div class="project-footer"> 
+              <a href="{{ addon.url | absolute_url }}" class="btn btn-info btn-raised btn-sm project-link">View</a>
+            </div>
+          </div>
+        </div>
+       </div>
+      {% endfor %}
+    </div>
+  </div>
+</article>

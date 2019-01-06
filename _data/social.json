@@ -1,10 +1,18 @@
 [
   {
-    "icon": "fa-github",
-    "link": "https://github.com/vlmaksime"
+    "icon": "fa-facebook",
+    "link": ""
   },
   {
-    "icon": "fa-telegram",
-    "link": "https://t.me/vl_maksime"
+    "icon": "fa-twitter",
+    "link": ""
   },
+  {
+    "icon": "fa-linkedin",
+    "link": ""
+  },
+  {
+    "icon": "fa-stack-exchange",
+    "link": ""
+  }
 ]
