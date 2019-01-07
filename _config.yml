@@ -12,13 +12,7 @@ url: ""
 
 allowsearch: true
 
-disqus_shortname: aboutashu
-google_analytics: UA-72862926-1
-
-share:
-  twitter_username: \#
-  fb_appid: 000000000000
-
+# google_analytics: UA-72862926-1
 
 enableTags: true
 tagarray: []
@@ -31,6 +25,7 @@ paginate_path: "/page:num/"
 collections:
   addons:
     output: true
+    permalink: /releases/:path/
 
 # Build settings
 markdown: kramdown

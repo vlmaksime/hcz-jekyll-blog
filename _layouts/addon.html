@@ -1,42 +1,26 @@
 ---
-layout: page
+layout: default
 ---
 {% capture icon_url %}/releases/{{ page._id }}/icon.png{% endcapture %}
 {% capture download_url %}/releases/{{ page._id }}/{{ page._id }}-{{ page.version }}.zip{% endcapture %}
-<div class="post-ribbon"></div>
-<main class="post-main mdl-layout__content">
-  <div class="post-container mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-    <div class="post-section mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-    <div>
-      <h3>{{ page.title }}</h3>
-      <div>
-        <div>
-          <img alt="icon" src="{{ icon_url | absolute_url }}" style="height:128px; width:128px" />
-        </div>
-        <div>
-          <p>{{ page.summary }}</p>
-          <p>{{ page.description }}</p>
-        </div>
-        <div class="mdl-color-text--grey-500">
-          {% if page.provider %} • {{ page.provider }}{% endif %}{% if page.version %} • v.{{ page.version }}{% endif %}
-      </div>
-      </div>
-      <a class="btn btn-info btn-raised btn-sm" target="_blank" href="{{ page.forum }}">Forum</a>
-      <a class="btn btn-info btn-raised btn-sm" target="_blank" href="{{ page.website }}">Website</a>
-      <a class="btn btn-info btn-raised btn-sm" target="_blank" href="{{ page.source }}">Source</a>
-      <a class="btn btn-info btn-raised btn-sm" href="{{ download_url | absolute_url }}">Download</a>
-      <article class="post-content">
-        <h3>Список изменений</h3>
-        <p>{{ content }}</p>
-      </article>
-      <!-- Disqus comments -->
-      {% if site.disqus %}
-      <div>
-        <h3>Comments</h3>
-        {% include disqus.html %}
-      </div>
-      {% endif %}
+<div class="post-content well">
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-12" align="center">
+      <img alt="icon" src="{{ icon_url | absolute_url }}" style="height:160px; width:160px" />
+    </div>
+    <div class="col-md-9 col-sm-9 col-xs-12">
+      <p>{{ page.summary }}</p>
+      <p>{{ page.description }}</p>
     </div>
   </div>
-</main>
+  <div class="row">
+    {% if page.forum %}<a class="btn btn-info btn-raised btn-sm" target="_blank" href="{{ page.forum }}">Обсуждение</a>{% endif %}
+    {% if page.website %}<a class="btn btn-info btn-raised btn-sm" target="_blank" href="{{ page.website }}">Сайт проекта</a>{% endif %}
+    {% if page.source %}<a class="btn btn-info btn-raised btn-sm" target="_blank" href="{{ page.source }}">Исходный код</a>{% endif %}
+    <a class="btn btn-info btn-raised btn-sm" href="{{ download_url | absolute_url }}">Скачать</a>
+  </div>
+  <article class="content">
+    <h3>Список изменений</h3>
+    <blockquote><p>{{ content }}</p></blockquote>
+  </article>
+</div>
