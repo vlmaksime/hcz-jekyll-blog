@@ -3,14 +3,13 @@
   <head>
     {% include meta.html %}
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
-    <script type="text/javascript">window.baseurl = '{{ site.url }}';</script>
     {% include css.html %}
-    {% if site.google_analytics %}{% include analytics.html %}{% endif %}
+    {% include js_head.html %}
   </head>
 
-  <body class="home overflow-hidden">
+  <body>
     {% include header.html %}
     {% include main.html %}
-    {% include js.html %}
+    {% include js_body.html %}
   </body>
 </html>

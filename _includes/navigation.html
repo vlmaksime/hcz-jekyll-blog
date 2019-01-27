@@ -1,5 +1,5 @@
-<ul class="list-separator nav navbar-nav well well-primary {{ page.layout }}">
 {% assign page_url = page.url | prepend: site.baseurl | prepend: site.url %}
+<ul class="nav navbar-nav">
 {% for i in site.data.urls %}
   {% assign current = nil %}
   {% assign linkurl = nil %}
@@ -10,7 +10,7 @@
   {% endif %}
   {% assign target = i.target %}
   {% unless target %} {% assign target = '_self' %} {% endunless %}
-  {% if page_url == linkurl or page.layout == i.layout %} {% assign current = 'current-menu-item' %} {% endif %}
-  <li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 {{ current }}"><a href="{{ linkurl }}" target="{{ target }}"><i></i> {{ i.text }}</a></li>
+  {% if page_url == linkurl or page.layout == i.layout %} {% assign current = 'active' %} {% endif %}
+  <li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 {{ current }}"><a href="{{ linkurl }}"><i class="fa {{ i.icon }}"></i> {{ i.text }}</a></li>
 {% endfor %}
 </ul>
