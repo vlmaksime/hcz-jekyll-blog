@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-{% capture icon_url %}/releases/{{ page._id }}/icon.png{% endcapture %}
-{% capture download_url %}/releases/{{ page._id }}/{{ page._id }}-{{ page.version }}.zip{% endcapture %}
+{% capture icon_url %}/repo/helix/{{ page._id }}/icon.png{% endcapture %}
 <div class="post-content well">
   <div class="row">
     <div class="col-md-3 col-sm-3 col-xs-12" align="center">
@@ -17,7 +16,6 @@ layout: default
     {% if page.forum %}<a class="btn btn-info btn-raised btn-sm" target="_blank" href="{{ page.forum }}">Обсуждение</a>{% endif %}
     {% if page.website %}<a class="btn btn-info btn-raised btn-sm" target="_blank" href="{{ page.website }}">Сайт проекта</a>{% endif %}
     {% if page.source %}<a class="btn btn-info btn-raised btn-sm" target="_blank" href="{{ page.source }}">Исходный код</a>{% endif %}
-    <a class="btn btn-info btn-raised btn-sm" href="{{ download_url | absolute_url }}">Скачать</a>
   </div>
   <article class="content">
     <h3>Список изменений</h3>
